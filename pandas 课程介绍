@@ -1,0 +1,74 @@
+1:课程介绍
+2：介绍ipython
+3：介绍numpy
+4：用ipython介绍pandas
+5：用ipython notebook介绍pandas
+6：继续介绍pandas
+
+前面六节课内容主要来源于官方文档中的10 minutes to pandas
+作业：阅读官方文档的10 minutes to pandas进一步熟悉pandas
+
+
+7：电影评分数据处理实例
+8：电影评分数据处理实例续
+
+作业：找出男女分歧最大并且热度较高的电影
+
+9:pandas 核心数据结构（dataFrame的创建，行列标签）
+10：pandas核心数据结构（续）（dataFrame的添加删除操作，索引的选
+
+择，数据对齐，使用numpy函数。panel：三维带标签的数组）
+
+心得：
+pandas的数据处理最主要的还是dataFrame，可以将他看做像Excel表格数
+
+据，
+series是只有一列的dataFrame，
+三维以上的可以看成是多维索引的dataFrame
+
+
+11：基础运算
+重新索引：reindex，series和dataFrame都有reindex方法
+丢弃一部分数据：df.drop('A')
+运算：df.apply()   df.applymap()
+排序和排名：df.sort_values()   s.rank()
+数据的唯一性：s.value_counts()   s.unique()   s.isin()
+
+作业：熟悉lamda函数使用
+
+12:pandas的索引
+行索引,列索引,索引类：s.index   df.index  df.columns
+重复索引:s.index.is_unique   s.groupby(s.index).sum()//将重复的
+
+值相加
+多重索引
+	创建
+	索引交换
+	按照索引层次进行统计
+	索引与列的转换
+
+
+13：分组运算（拆分，应用，合并）
+df.groupby()
+14:数据的聚合
+内置聚合函数：sum mean max min describe....
+自定义聚合函数 grouped.agg df.groupby().transform()
+
+15:数据IO
+网络爬虫-》解析，清洗-》读入数据进行分析
+数据迭代：针对很大的数据先读部分解析，再读一部分进行迭代。。。
+pickle包用于处理二进制数据
+HDF5：C语言实现的库，可以高效的读取磁盘上的二进制存储的科学数据
+
+16：时间序列
+Python标准库中的时间
+17：时间重采样
+
+18:数据可视化
+
+19：实例：股票数据分析
+股票数据获取（爬虫）
+股票波动幅度分析
+年收益率
+
+20：时间事件日志
